@@ -36,17 +36,21 @@
   animation-duration: 1s; 
 }
 
-.message {
+.message-1 {
   margin-top: 10px;
   background: -webkit-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   background: -o-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: backInLeft;
+  animation-duration: 1s; 
 }
 
-p {
+.message-2 {
   color: var(--text-color);
+  animation: backInRight;
+  animation-duration: 1s; 
 }
 
 .main-btn {
@@ -76,7 +80,9 @@ p {
   background: -webkit-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   background: -o-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
   background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
-  background-size: 200%; 
+  background-size: 200%;
+  animation: backInUp;
+  animation-duration: 1s;  
 }
 .main-btn:hover {
   color: #fff;
